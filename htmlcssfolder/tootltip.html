@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      .tooltip-alignment {
+        margin: 25% auto;
+        text-align: center;
+        border: 1px solid black;
+        width: 250px;
+        padding: 1rem;
+      }
+      .tooltip {
+        position: relative;
+      }
+      .tooltip::before {
+        content: attr(tooltip-title);
+        position: absolute;
+        z-index: 2;
+        display: none;
+        padding: 10px;
+        right: -4rem;
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+      }
+
+      .tooltip:hover::before {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip tooltip-alignment" tooltip-title="a tooltip">hover</div>
+  </body>
+</html>

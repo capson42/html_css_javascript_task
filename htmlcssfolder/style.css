@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+}
+button{
+    width: 200px;
+}
+.child_1{
+    max-width:100% !important;
+    height:100vh;
+}
+.parent{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}   
+.child_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.remember_me{
+    font-size: 0.7rem;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.signin img{
+    border-radius: 2rem;
+}
+.login,.signin{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
