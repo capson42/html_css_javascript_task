@@ -1,9 +1,9 @@
 body{
     height: 100vh;
 }
-button{
-    width: 200px;
-}
+/* button{
+    width: 50%;
+} */
 .child_1{
     max-width:100% !important;
     height:100vh;
@@ -19,11 +19,16 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5rem;
+    width: 50%;
+    margin-inline: auto;
+    height: auto;
 }
+
 .remember_me{
     font-size: 0.7rem;
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
     margin-top: 1rem;
 }
 .signin img{
@@ -32,4 +37,13 @@ button{
 .login,.signin{
     margin-top: 1rem;
     font-size: 1rem;
+}
+footer{
+    margin-top: 5rem;
+    width: 80%;
+    margin-inline: auto;
+    font-size: 0.75rem;
+}
+a{
+    text-decoration: none !important;
 }
